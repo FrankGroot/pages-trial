@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="logo"></div>
+    <md-nav-bar
+            md-selected-nav-item="currentNavItem"
+            nav-bar-aria-label="navigation links">
+{% for option in site.more_vert %}
+        <md-nav-item md-nav-href="{{ option[1].link }}" name="{{ option[1].name }}">
+            {{ option[1].name }}
+        </md-nav-item>
+{% endfor %}
+    </md-nav-bar>
+</div>

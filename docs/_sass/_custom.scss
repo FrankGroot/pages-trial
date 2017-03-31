@@ -1,0 +1,56 @@
+.md-button {
+  text-transform: capitalize;
+  padding: 0 0 0 0;
+  margin: 6px 0px;
+}
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.customer {
+  background-color: white;
+  border: grey 1px solid;
+  color: black;
+  &:hover {
+    border-radius: 50%;
+  }
+  img {
+    width: 100px;
+  }
+}
+
+.circle {
+  width: 50%;
+  top: 15px;
+  margin: auto;
+  /*border: 1px dashed grey;*/
+  position: absolute;
+  left: 25%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.background {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.wwh {
+  /*border: 1px dashed grey;*/
+  button {
+    bottom: 0px;
+    position: absolute;
+    width: 95%;
+  }
+}
+
+.wwh-span {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+# Site settings
+title: Axon Framework
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Axon Framework is tha bomb! developer support and enterprise support options available.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://axonframework.org" # the base hostname & protocol for your site
+twitter_username: axonframework
+github_username:  axonframework
+#google_play: ''
+#google_plus_com: '00000'  # Community link
+#google_plus_per: ''  #Personal link
+#facebook_app_id:
+
+# Layout settings
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: Axon Framework
+    link: /framework
+  option2:
+    name: Services
+    link: /services
+  option3:
+    name: Explore
+    link: /explore
+  option4:
+    name: Community
+    link: /community
+  option5:
+    name: Blog
+    link: /blog
+  option6:
+    name: Axon Platform
+    link: /platform
+
+disqus: true
+disqus_shortname: 'disqusname'
+
+# Build settings
+markdown: kramdown
