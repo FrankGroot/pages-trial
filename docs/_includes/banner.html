@@ -6,21 +6,65 @@
 
             <md-grid-tile md-colspan-sm="2" md-colspan="2">
                 <div layout="column" flex="100" layout-align="space-between stretch">
-                    <h2>
+                    <h2 style="width:115%">
                         Download Axon Framework
                     </h2>
                     <span>
                         Open source Java platform solving common application complexity to enable developers
                         to focus on the essence of business problems.
                     </span>
-                    <md-button class="md-warn md-raised">Download 3.0.3. Full Package</md-button>
+                    <md-button class="md-warn md-raised" href="{{ site.data.downloads.framework.latest.url }}"
+                               target="_blank">{{ site.data.downloads.framework.latest.desc }}
+                    </md-button>
                 </div>
             </md-grid-tile>
             <md-grid-tile hide-sm>
 
             </md-grid-tile>
             <md-grid-tile md-colspan-sm="2" md-colspan="3">
-                Right block
+                <div layout="column" flex="100" layout-align="space-between stretch">
+                    <!--ugly spacer -->
+                    <div flex="30"><br>&nbsp;<br><br></div>
+                    <div layout="row" flex="100" layout-align="space-between stretch">
+                        <table class="download-titles">
+                            <tr>
+                                <td>Sources</td>
+                            </tr>
+                            <tr>
+                                <td>Reference Guide</td>
+                            </tr>
+                            <tr>
+                                <td>JavaDoc</td>
+                            </tr>
+                        </table>
+                        <div layout="column" flex="100" layout-align="space-between stretch">
+                            <table class="downloads">
+                                <tr>
+                                    <td><a href="{{ site.data.downloads.framework.latest.sources.zip }}">zip</a></td>
+                                    <td><a href="{{ site.data.downloads.framework.latest.sources.tar }}">tar.gz</a></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <table class="downloads">
+                                <tr>
+                                    <td><a href="{{ site.data.downloads.framework.latest.docs.html }}">html</a></td>
+                                    <td><a href="{{ site.data.downloads.framework.latest.docs.pdf }}">pdf</a></td>
+                                    <td><a href="{{ site.data.downloads.framework.latest.docs.epub }}">epub</a></td>
+                                    <td><a href="{{ site.data.downloads.framework.latest.docs.mobi }}">mobi</a></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <table class="downloads">
+                                <tr>
+                                    <td><a href="{{ site.data.downloads.framework.latest.javadoc }}">html</a></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    <a class="banner-link" href="#">Earlier versions & documentation &raquo;</a>
+                </div>
             </md-grid-tile>
         </md-grid-list>
     </div>

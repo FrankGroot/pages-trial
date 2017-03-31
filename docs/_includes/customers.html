@@ -3,25 +3,13 @@
         <h2>Who is using the Axon Framework</h2>
         <md-grid-list md-cols-sm="2" md-cols-md="4" md-cols="6"
                       md-gutter="12px" md-row-height="1:1">
-
-            <md-grid-tile class="customer">
-                <img src="img/customers/anwb.png">
-            </md-grid-tile>
-            <md-grid-tile class="customer">
-                <img src="img/customers/huawei.png">
-            </md-grid-tile>
-            <md-grid-tile class="customer">
-                <img src="img/customers/anwb.png">
-            </md-grid-tile>
-            <md-grid-tile class="customer">
-                <img src="img/customers/huawei.png">
-            </md-grid-tile>
-            <md-grid-tile class="customer">
-                <img src="img/customers/anwb.png">
-            </md-grid-tile>
-            <md-grid-tile class="customer">
-                <img src="img/customers/huawei.png">
-            </md-grid-tile>
+            {% for customer in site.data.customers limit:6 %}
+                <md-grid-tile class="customer">
+                    <a href="{{ customer.url }}">
+                        <img src="{{ customer.img }}">
+                    </a>
+                </md-grid-tile>
+            {% endfor %}
         </md-grid-list>
     </div>
 </div>

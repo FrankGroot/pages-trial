@@ -3,7 +3,7 @@ title: Axon Framework
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Axon Framework is tha bomb! developer support and enterprise support options available.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/pages-trial/" # the subpath of your site, e.g. /blog/
 url: "http://axonframework.org" # the base hostname & protocol for your site
 twitter_username: axonframework
 github_username:  axonframework
@@ -19,22 +19,22 @@ pagination_type: default  # values [ ops, default ]
 mainnav:
   option1:
     name: Axon Framework
-    link: /
+    link: index
   option2:
     name: Services
-    link: /services
+    link: services
   option3:
     name: Explore
-    link: /explore
+    link: explore
   option4:
     name: Community
-    link: /community
+    link: community
   option5:
     name: Blog
-    link: /blog
+    link: blog
   option6:
     name: Axon Platform
-    link: /platform
+    link: platform
 
 disqus: true
 disqus_shortname: 'disqusname'

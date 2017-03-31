@@ -1,0 +1,23 @@
+framework:
+  latest:
+    version: 3.0.2
+    url: http://trifork.com/download-axonframework/
+    desc: Download 3.0.2 Full package
+    sources:
+      zip: https://github.com/AxonFramework/AxonFramework/zipball/axon-3.0.2
+      tar: https://github.com/AxonFramework/AxonFramework/tarball/axon-3.0.2
+    docs:
+        title: Reference Guide
+        html: http://docs.axonframework.org/v/3.0/
+        pdf: https://www.gitbook.com/download/pdf/book/axonframework/referenceguide/v/3.0
+        epub: https://www.gitbook.com/download/epub/book/axonframework/referenceguide/v/3.0
+        mobi: https://www.gitbook.com/download/mobi/book/axonframework/referenceguide/v/3.0
+    javadoc: http://www.axonframework.org/apidocs/3.0/
+  previous:
+    version: 2.4.6
+    url: https://github.com/AxonFramework/AxonFramework/releases/download/axon-2.4.6/axon-2.4.6-full.zip
+    desc: Download 2.4.6 Full package
+    docs:
+        title: Reference Guide
+        html: http://www.axonframework.org/docs/2.4
+        javadoc: http://www.axonframework.org/apidocs/2.4

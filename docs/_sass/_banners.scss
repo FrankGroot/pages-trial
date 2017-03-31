@@ -1,7 +1,8 @@
 
 .footer {
-  background-color: grey;
+  background-color: #434a56;
   color: white;
+  height: 250px;
 }
 
 .banner {
@@ -16,4 +17,57 @@
   background-color: whitesmoke;
   color: black;
   padding: 15px 0px 15px 0px;
+}
+
+.download-titles {
+  border-spacing: 10px 5px;
+  margin-left: -10px;
+}
+.downloads {
+  width: 95%;
+  border-spacing: 10px 5px;
+
+  td {
+    background-color: rgba(255, 192, 0, 0.4);
+    padding: 0px 5px;
+    &:last-child {
+      width: 100%;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.banner-link {
+  margin-top: 30px;
+  color: yellow;
+  text-decoration: none;
+}
+
+.contactform {
+
+  textarea {
+    vertical-align: top;
+    overflow: auto;
+    border-radius: 3px;
+    resize: none;
+    border: none;
+    padding: 6px 10px;
+  }
+
+  input {
+    width: 47%;
+    border-radius: 3px;
+    border: none;
+    overflow: auto;
+    padding: 3px 10px;
+  }
+
+  button {
+    width: 47%;
+    margin-top: 3px;
+  }
+
 }
