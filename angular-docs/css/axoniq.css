@@ -51,7 +51,12 @@
 
 
 .circle-text {
-    width:50%;
+    width: 50%;
+    top: 15px;
+    margin: auto;
+    /*border: 1px dashed grey;*/
+    position: absolute;
+    left: 25%;
 }
 
 .circle-text:after {
@@ -83,4 +88,20 @@
 .background {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.wwh {
+    /*border: 1px dashed grey;*/
+}
+.wwh-span {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+}
+
+.wwh button {
+    bottom: 0px;
+    position: absolute;
+    width: 95%;
 }
