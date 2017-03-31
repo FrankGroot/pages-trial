@@ -16,10 +16,10 @@ github_username:  axonframework
 post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
-more_vert:
+mainnav:
   option1:
     name: Axon Framework
-    link: /framework
+    link: /
   option2:
     name: Services
     link: /services
