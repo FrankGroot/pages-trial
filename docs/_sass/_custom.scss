@@ -31,37 +31,3 @@ h1, h2, h3, h4, h5 {
     width: 100px;
   }
 }
-
-.circle {
-  width: 50%;
-  top: 15px;
-  margin: auto;
-  /*border: 1px dashed grey;*/
-  position: absolute;
-  left: 25%;
-
-  img {
-    width: 100%;
-  }
-}
-
-.background {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.wwh {
-  /*border: 1px dashed grey;*/
-  button {
-    bottom: 0px;
-    position: absolute;
-    width: 95%;
-  }
-}
-
-.wwh-span {
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  text-align: center;
-}
