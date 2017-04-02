@@ -1,10 +1,4 @@
 
-.footer {
-  background-color: #434a56;
-  color: white;
-  height: 250px;
-}
-
 .banner {
   background-image: url("../img/bg-banner.png");
   background-repeat: no-repeat;
@@ -50,33 +44,6 @@
     margin-left: -10px;
   }
 }
-
-.contactform {
-
-  textarea {
-    vertical-align: top;
-    overflow: auto;
-    border-radius: 3px;
-    resize: none;
-    border: none;
-    padding: 6px 10px;
-  }
-
-  input {
-    width: 47%;
-    border-radius: 3px;
-    border: none;
-    overflow: auto;
-    padding: 3px 10px;
-  }
-
-  button {
-    width: 47%;
-    margin-top: 3px;
-  }
-
-}
-
 
 .customers {
   background-color: whitesmoke;

@@ -1,55 +1,46 @@
 <div class="footer">
 
-    <div class="container">
-        <md-grid-list md-cols-sm="2" md-cols-md="4" md-cols="6"
-                      md-gutter="12px" md-row-height="200px">
-            <md-grid-tile md-colspan="3" md-colspan-sm="2">
-                <div layout="row" layout-align="space-around start" flex="100">
+    <div class="container" layout="row" layout-xs="column">
+        <div layout="row" layout-align="space-around start" flex="50" flex-xs="100">
 
-                    <div flex="50">
-                        <H2>Corporate</H2>
-                        <ul>
-                            <li>About AxonIQ</li>
-                            <li>Careers</li>
-                            <li>Newsletter</li>
-                        </ul>
-                    </div>
-                    <div flex="50">
-                        <H2>Links</H2>
-                        <ul>
-                            <li>Code samples</li>
-                            <li>Presentation & Interviews</li>
-                            <li>Third party resources</li>
-                            <li>Trifork blog</li>
-                        </ul>
-                    </div>
-                </div>
-            </md-grid-tile>
-            <md-grid-tile md-colspan="3" md-colspan-sm="2">
-                <div layout="row" layout-align="space-around start" flex="100">
-                    <form method="POST" action="https://trifork.activehosted.com/proc.php" id="_form_3_" novalidate=""
-                          _lpchecked="1" class="contactform" flex="100">
-                        <input type="hidden" name="u" value="3" data-name="u">
-                        <input type="hidden" name="f" value="3" data-name="f">
-                        <input type="hidden" name="s" data-name="s">
-                        <input type="hidden" name="c" value="0" data-name="c">
-                        <input type="hidden" name="m" value="0" data-name="m">
-                        <input type="hidden" name="act" value="sub" data-name="act">
-                        <input type="hidden" name="v" value="2" data-name="v">
-                        <h2>Get in touch</h2>
+            <div flex="50" >
+                <H2>Corporate</H2>
+                <ul>
+                    <li>About AxonIQ</li>
+                    <li>Careers</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div flex="50">
+                <H2>Links</H2>
+                <ul>
+                    <li>Code samples</li>
+                    <li>Presentation & Interviews</li>
+                    <li>Third party resources</li>
+                    <li>Trifork blog</li>
+                </ul>
+            </div>
+        </div>
+        <div flex="50" flex-xs="100">
+            <form method="POST" action="https://trifork.activehosted.com/proc.php" id="_form_3_" novalidate=""
+                  _lpchecked="1" class="contactform" flex="100">
+                <input type="hidden" name="u" value="3" data-name="u">
+                <input type="hidden" name="f" value="3" data-name="f">
+                <input type="hidden" name="s" data-name="s">
+                <input type="hidden" name="c" value="0" data-name="c">
+                <input type="hidden" name="m" value="0" data-name="m">
+                <input type="hidden" name="act" value="sub" data-name="act">
+                <input type="hidden" name="v" value="2" data-name="v">
+                <h2>Get in touch</h2>
 
-                        <textarea name="field[1]" placeholder="Your message here" rows="3" cols="55"
-                                  data-name="comment"></textarea>
-                        <input type="text" name="email" placeholder="Type your email" required=""
-                               data-name="email">
-                        <md-button id="_form_3_submit" class="md-accent md-raised" type="submit" flex="50">
-                            Send
-                        </md-button>
-                    </form>
-                </div>
-            </md-grid-tile>
-
-        </md-grid-list>
-
+                <textarea name="field[1]" placeholder="Your message here" rows="3"
+                              data-name="comment"></textarea>
+                <input type="text" name="email" placeholder="Type your email" required=""
+                       data-name="email">
+                <md-button id="_form_3_submit" class="md-accent md-raised" type="submit">
+                    Send
+                </md-button>
+            </form>
+        </div>
     </div>
 </div>
