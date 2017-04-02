@@ -1,6 +1,10 @@
 <div class="container">
     <div class="logo"></div>
-    <md-nav-bar
+    <md-button class="menu md-icon-button md-no-focus" hide-gt-sm
+               ng-click="openSidenav()">
+        <i class="material-icons">menu</i>
+    </md-button>
+    <md-nav-bar show-gt-sm hide
             md-selected-nav-item="'{{ page.title }}'"
             nav-bar-aria-label="navigation links">
 {% for option in site.mainnav %}
@@ -9,4 +13,27 @@
         </md-nav-item>
 {% endfor %}
     </md-nav-bar>
+    <md-sidenav
+            class="md-sidenav-left"
+            md-component-id="left"
+            md-whiteframe="4">
+        <md-nav-bar class="sidenav"
+                    mdNoInkBar = true
+                    md-selected-nav-item="'{{ page.title }}'"
+                    nav-bar-aria-label="navigation links">
+            {% for option in site.mainnav %}
+            <md-nav-item md-nav-href="{{ option[1].link }}" name="{{ option[1].name }}" value="{{ option[1].name }}">
+                {{ option[1].name }}
+            </md-nav-item>
+            {% endfor %}
+        </md-nav-bar>
+        <!--<md-content layout-padding >-->
+            <!--{% for option in site.mainnav %}-->
+            <!--<md-button href="{{ option[1].link }}" name="{{ option[1].name }}" value="{{ option[1].name }}">-->
+        <!--{{ option[1].name }}-->
+        <!--</md-button>-->
+        <!--{% endfor %}-->
+        <!--</md-content>-->
+
+    </md-sidenav>
 </div>
