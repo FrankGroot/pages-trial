@@ -11,8 +11,8 @@
     white-space: nowrap;
   }
   @media (max-width: 959px) and (min-width: 600px) {
-    .flex-offset-sm-20 {
-      margin-right: 20%;
+    .flex-offset-sm-15 {
+      margin-right: 15%;
     }
   }
 
@@ -40,8 +40,7 @@
   }
 
   .download-titles {
-    border-spacing: 10px 5px;
-    margin-left: -10px;
+    border-spacing: 0px 5px;
   }
 }
 
