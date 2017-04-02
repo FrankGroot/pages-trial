@@ -9,41 +9,46 @@
   background-image: url("../img/bg-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: auto;
   color: white;
-}
+  padding-bottom: 15px;
 
-.customers {
-  background-color: whitesmoke;
-  color: black;
-  padding: 15px 0px 15px 0px;
-}
-
-.download-titles {
-  border-spacing: 10px 5px;
-  margin-left: -10px;
-}
-.downloads {
-  width: 95%;
-  border-spacing: 10px 5px;
-
-  td {
-    background-color: rgba(255, 192, 0, 0.4);
-    padding: 0px 5px;
-    &:last-child {
-      width: 100%;
+  h2 {
+    white-space: nowrap;
+  }
+  @media (max-width: 959px) and (min-width: 600px) {
+    .flex-offset-sm-20 {
+      margin-right: 20%;
     }
   }
-  a {
-    color: white;
+
+  .banner-link {
+    margin-top: 30px;
+    color: yellow;
     text-decoration: none;
   }
-}
 
-.banner-link {
-  margin-top: 30px;
-  color: yellow;
-  text-decoration: none;
+  .downloads {
+    width: 95%;
+    border-spacing: 10px 5px;
+
+    td {
+      background-color: rgba(255, 192, 0, 0.4);
+      padding: 0px 5px;
+      &:last-child {
+        width: 100%;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .download-titles {
+    border-spacing: 10px 5px;
+    margin-left: -10px;
+  }
 }
 
 .contactform {
@@ -70,4 +75,11 @@
     margin-top: 3px;
   }
 
+}
+
+
+.customers {
+  background-color: whitesmoke;
+  color: black;
+  padding: 15px 0px 15px 0px;
 }
