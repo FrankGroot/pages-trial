@@ -7,21 +7,63 @@
             {% for event in site.data.events %}
             <md-grid-tile md-colspan="{{ event.cols || 1 }}" md-rowspan="{{ event.rows || 1}}">
                 <div layout="column" layout-align="space-between stretch" class="event {{event.type}}">
-                    <!--<div class="eventheader pickgradient">-->
+                    <!--On multiple rows: display imageheader-->
+                    {% if event.rows > 1 %}
                     <div class="eventheader" style="background-image: url('{{ event.image }}') ">
                         <div class="cal">
                             <div class="month">{{ event.startdate | date: "%b" }}</div>
                             <div class="date">{{ event.startdate | date: "%e" }}</div>
-                            <div class="time"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z" }}
+                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"
+                                }}
                             </div>
+                            {% if event.location %}
+                            <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="content">
+                        <div class="eventtype">{{ event.type }}</div>
                         <h3>{{ event.title }}</h3>
                         <span class="summary">{{ event.summary}}</span>
-                        <md-button flex="100" class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}
-                        </md-button>
+                        <md-button flex="100" class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}</md-button>
                     </div>
+                    {% else %}
+                    <!--Single row -->
+                    {% if event.cols > 1 %}
+                    <!--Double columns-->
+                    <div class="content {{ event.type }}" layout="row">
+                        <div flex>
+                            <div class="eventtype">{{ event.type }}</div>
+                            <h3>{{ event.title }}</h3>
+                            <span class="summary">{{ event.summary}}</span>
+                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}</div>
+                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z" }}
+                            </div>
+                            {% if event.location %}
+                            <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
+                            {% endif %}
+                        </div>
+                        {% if event.linktext %}
+                        <div flex="15">
+                            <button class="vertical md-button md-warn md-raised" href="{{ event.link }}">{{ event.linktext }} </button>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    {% else %}
+                    <!--Single square-->
+                    <div class="content {{ event.type }}">
+                        <a href="{{ event.link }}">
+                            <div class="eventtype">{{ event.type }}</div>
+                            <h3>{{ event.title }}</h3>
+                            {% if event.location %}
+                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}</div>
+                            <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
+                            {% endif %}
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% endif %}
 
                 </div>
             </md-grid-tile>

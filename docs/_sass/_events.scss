@@ -8,11 +8,36 @@
     width: 100%;
     background-color: white;
     border: 1px lightgray solid;
+    border-radius: 3px;
   }
   .content {
     padding: 3px 6px;
     font-size: small;
 
+    &.meetup {
+      border-left: 6px solid purple;
+      height: 100%;
+    }
+    &.conference {
+      border-left: 6px solid limegreen;
+      height: 100%;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    .vertical {
+      padding: 0px 6px;
+      margin: 6px 0px;
+      height: 90%;
+      display: flex;
+      min-width: 10px;
+    }
+    .eventtype {
+      text-transform: uppercase;
+      color:  lightgray;
+    }
     .md-button {
       width: 100%;
     }
@@ -64,14 +89,13 @@
       border-top: 1px solid white;
     }
 
-    .time {
-      color: white;
-      font-weight: 300;
-      font-size: x-small;
-      .material-icons {
-        font-size: xx-small;
-        vertical-align: bottom;
-      }
+  }
+  .small {
+    font-weight: 300;
+    font-size: x-small;
+    .material-icons {
+      font-size: xx-small;
+      vertical-align: bottom;
     }
   }
 }
