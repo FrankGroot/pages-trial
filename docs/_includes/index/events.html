@@ -13,10 +13,9 @@
                         <div class="cal">
                             <div class="month">{{ event.startdate | date: "%b" }}</div>
                             <div class="date">
-                                {{ event.startdate | date: "%e" }}{% if event.enddate %}- {{ event.enddate | date: "%e" }}{% endif %}
+                                {{ event.startdate | date: "%e" }}{% if event.enddate %}-{{event.enddate|date:"%e"|replace:" ",""}}{% endif %}
                             </div>
-                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"
-                                }}
+                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"}}
                             </div>
                             {% if event.location %}
                             <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
@@ -27,7 +26,8 @@
                         <div class="eventtype">{{ event.type }}</div>
                         <h3>{{ event.title }}</h3>
                         <span class="summary">{{ event.summary}}</span>
-                        <md-button flex="100" class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}</md-button>
+                        <md-button flex="100" class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}
+                        </md-button>
                     </div>
                     {% else %}
                     <!--Single row -->
@@ -38,8 +38,11 @@
                             <div class="eventtype">{{ event.type }}</div>
                             <h3>{{ event.title }}</h3>
                             <span class="summary">{{ event.summary}}</span>
-                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}{% if event.enddate %}- {{ event.enddate | date: "%x" }}{% endif %}</div>
-                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z" }}
+                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}
+                                {% if event.enddate %}-{{ event.enddate | date: "%x" |replace:" ",""}}{% endif %}
+                            </div>
+                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"
+                                }}
                             </div>
                             {% if event.location %}
                             <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
@@ -47,7 +50,9 @@
                         </div>
                         {% if event.linktext %}
                         <div flex="15">
-                            <button class="vertical md-button md-warn md-raised" href="{{ event.link }}">{{ event.linktext }} </button>
+                            <button class="vertical md-button md-warn md-raised" href="{{ event.link }}">{{
+                                event.linktext }}
+                            </button>
                         </div>
                         {% endif %}
                     </div>
@@ -59,7 +64,9 @@
                             <div class="eventtype">{{ event.type }}</div>
                             <h3>{{ event.title }}</h3>
                             {% if event.location %}
-                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}{% if event.enddate %}- {{ event.enddate | date: "%x" }}{% endif %}</div>
+                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}{%
+                                if event.enddate %}-{{ event.enddate | date: "%x" |replace:" ","" }}{% endif %}
+                            </div>
                             <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
                             {% endif %}
                         </a>
