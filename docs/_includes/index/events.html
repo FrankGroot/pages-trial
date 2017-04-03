@@ -2,40 +2,37 @@
     <div class="container">
         <h2>Don't miss out on these upcoming events</h2>
 
-        <md-grid-list md-cols-gt-sm="6" md-cols="2"
+        <md-grid-list md-cols-gt-xs="6" md-cols="2"
                       md-gutter="5%" md-row-height="1:1">
             {% for event in site.data.events %}
-                <md-grid-tile md-colspan="{{ event.cols || 1 }}" md-rowspan="{{ event.rows || 1}}">
-                    <div layout="column" layout-align="space-between stretch" class="event {{event.type}}">
-                        <div class="eventheader" style="background-image: url('{{ event.image }}') ">
+            <md-grid-tile md-colspan="{{ event.cols || 1 }}" md-rowspan="{{ event.rows || 1}}">
+                <div layout="column" layout-align="space-between stretch" class="event {{event.type}}">
+                    <!--<div class="eventheader pickgradient">-->
+                    <div class="eventheader" style="background-image: url('{{ event.image }}') ">
+                        <div class="cal">
+                            <div class="month">{{ event.startdate | date: "%b" }}</div>
+                            <div class="date">{{ event.startdate | date: "%e" }}</div>
+                            <div class="time"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z" }}
+                            </div>
                         </div>
+                    </div>
+                    <div class="content">
                         <h3>{{ event.title }}</h3>
                         <span class="summary">{{ event.summary}}</span>
-                        <md-button class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}</md-button>
+                        <md-button flex="100" class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}
+                        </md-button>
                     </div>
-                </md-grid-tile>
+
+                </div>
+            </md-grid-tile>
             {% endfor %}
 
+            <md-grid-tile md-colspan="2" md-rowspan="2">
+                <div layout="column" layout-align="space-between stretch" class="event {{event.type}}">
+                    <img src="img/temp.png">
+                </div>
+            </md-grid-tile>
 
-
-            <!--<md-grid-tile style="background-color: red" md-colspan="2" md-rowspan="2">-->
-                <!--1-->
-            <!--</md-grid-tile>-->
-            <!--<md-grid-tile style="background-color: yellow" md-colspan="2">-->
-                <!--2-->
-            <!--</md-grid-tile>-->
-            <!--<md-grid-tile style="background-color: green">-->
-                <!--3-->
-            <!--</md-grid-tile>-->
-            <!--<md-grid-tile style="background-color: purple" md-rowspan="2">-->
-                <!--4-->
-            <!--</md-grid-tile>-->
-            <!--<md-grid-tile style="background-color: green">-->
-                <!--5-->
-            <!--</md-grid-tile>-->
-            <!--<md-grid-tile style="background-color: grey" md-colspan="2">-->
-                <!--6-->
-            <!--</md-grid-tile>-->
         </md-grid-list>
     </div>
 </div>

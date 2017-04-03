@@ -1,11 +1,7 @@
 - advanced:
   type: training
-  start:
-    date: 8 May 2017
-    time: 9:00
-  end:
-    date: 9 May 2017
-    time: 17:00
+  startdate: 2017-05-08T08:00:00Z
+  enddate: 2017-05-08T16:00:00Z
   title: Advanced Features
   location: Amsterdam
   summary: In this 2-day workshop participants will learn how to use Axon’s advanced features, how to use Axon in a distributed environment, and how to deal with the evolution of an application.
@@ -16,19 +12,15 @@
   cols: 2
 - pragmatic:
   type: meetup
-  start:
-    date: 8 May 2017
-    time: 18:00
+  startdate: 2017-06-08T08:00:00Z
   title: Pragmatic Microservices
   location: Amsterdam
   summary: Small summary
   cols: 2
 - conference:
   type: conference
-  start:
-    date: 27 April 2017
-  end:
-    date: 28 April 2017
+  startdate: 2017-04-27T09:00:00Z
+  enddate: 2017-04-28T17:00:00Z
   title: DDD eXchange 2017
   location: London
   summary: In this 2-day conference youi can visit our stand at the conference. Talk to Allard or Frank about Axon and it's future!
