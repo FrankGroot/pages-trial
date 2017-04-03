@@ -1,7 +1,7 @@
 - advanced:
   type: training
   startdate: 2017-05-08T08:00:00Z
-  enddate: 2017-05-08T16:00:00Z
+  enddate: 2017-05-09T16:00:00Z
   title: Advanced Features
   location: Amsterdam
   summary: In this 2-day workshop participants will learn how to use Axon’s advanced features, how to use Axon in a distributed environment, and how to deal with the evolution of an application.

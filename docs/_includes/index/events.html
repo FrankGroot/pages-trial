@@ -12,7 +12,9 @@
                     <div class="eventheader" style="background-image: url('{{ event.image }}') ">
                         <div class="cal">
                             <div class="month">{{ event.startdate | date: "%b" }}</div>
-                            <div class="date">{{ event.startdate | date: "%e" }}</div>
+                            <div class="date">
+                                {{ event.startdate | date: "%e" }}{% if event.enddate %}- {{ event.enddate | date: "%e" }}{% endif %}
+                            </div>
                             <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"
                                 }}
                             </div>
@@ -36,7 +38,7 @@
                             <div class="eventtype">{{ event.type }}</div>
                             <h3>{{ event.title }}</h3>
                             <span class="summary">{{ event.summary}}</span>
-                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}</div>
+                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}{% if event.enddate %}- {{ event.enddate | date: "%x" }}{% endif %}</div>
                             <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z" }}
                             </div>
                             {% if event.location %}
@@ -57,7 +59,7 @@
                             <div class="eventtype">{{ event.type }}</div>
                             <h3>{{ event.title }}</h3>
                             {% if event.location %}
-                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}</div>
+                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}{% if event.enddate %}- {{ event.enddate | date: "%x" }}{% endif %}</div>
                             <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
                             {% endif %}
                         </a>
