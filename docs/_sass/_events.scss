@@ -1,0 +1,16 @@
+.events {
+  padding: 15px 0px 15px 0px;
+
+  .event {
+    overflow: hidden;
+    max-height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px lightgray solid;
+  }
+  .eventheader {
+    height: 100px;
+    background-size: cover;
+  }
+}
+
