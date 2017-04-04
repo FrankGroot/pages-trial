@@ -8,6 +8,8 @@
   background-color: white;
   border: grey 1px solid;
   color: black;
+  margin-left:20px;
+  margin-bottom:20px;
   &:hover {
     border-radius: 50%;
   }
@@ -42,5 +44,6 @@
   display: block;
   background-color: lightgray;
   padding: 10px;
+  box-sizing: border-box;
 }
 
