@@ -8,7 +8,7 @@
             md-selected-nav-item="'{{ page.title }}'"
             nav-bar-aria-label="navigation links">
 {% for option in site.mainnav %}
-        <md-nav-item md-nav-href="{{ option[1].link }}" name="{{ option[1].name }}" value="{{ option[1].name }}">
+        <md-nav-item md-nav-href="{{ site.baseurl }}{{ option[1].link }}" name="{{ option[1].name }}" value="{{ option[1].name }}">
             {{ option[1].name }}
         </md-nav-item>
 {% endfor %}
