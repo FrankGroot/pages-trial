@@ -13,6 +13,7 @@
   height: 50px;
   float: left;
   @media screen and (max-width: 960px)   {
+    background-position-y: 0px;
     height: 25px;
   }
 }
