@@ -1,0 +1,36 @@
+frankgroot:
+  title: Lead Architect
+  first: Frank
+  last: Groot
+  twitter: buckje
+  resume: has been working for Trifork since 2013 in several technical and managing roles.
+  quote: Frontend work is like a random Sudoku, sometimes there is no right answer....
+  image: img/authors/frankgroot.jpeg
+joriskuipers:
+  title: Lead Architect
+  first: Joris
+  last: Kuipers
+  twitter: jkuipers
+  resume: has worked as a hands-on architect for Trifork over the last four years, in markets as diverse as education, healthcare, news media and government. Before that he was a trainer and consultant for Spring Source, and he still teaches the occasional Spring training for the GOTO Academy. He has been working with Enterprise Java for more than 15 years.
+  quote: Whenever I'm looking for answers, I talk to myself.
+  image: img/authors/joriskuipers.jpeg
+allardbuize:
+  title: Chief Technology Officer
+  first: Allard
+  last: Buize
+  twitter: allardbz
+  resume: worked a lot, made a son and a twin. Founded Axon Framework.
+  quote: Don't call me Boss unless your a dog
+  image: img/authors/allardbuize.jpg
+thomasferguson:
+  title: CEO
+  first: Thomas
+  last: Ferguson
+  twitter:
+  resume:
+  quote: Since engaging with Trifork as our technological partner in developing Ysis 2.0. their expertise & insight has given us significant return on investment
+  image: http://trifork.com/wp-content/uploads/2014/09/Thomas-Ferguson.jpeg
+
+
+
+

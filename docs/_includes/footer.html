@@ -1,7 +1,7 @@
 <div class="footer">
 
-    <div class="container" layout="row" layout-xs="column">
-        <div layout="row" layout-align="space-around start" flex="50" flex-xs="100">
+    <div class="container" layout="row" layout-xs="column" layout-wrap>
+        <div layout="row" layout-align="space-around start" flex="50" flex-xs="100" >
 
             <div flex="50" >
                 <H2>Corporate</H2>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
         </div>
-        <div flex="50" flex-xs="100">
+        <div flex="50" flex-xs="100" flex-order-xs="-1">
             <form method="POST" action="https://trifork.activehosted.com/proc.php" id="_form_3_" novalidate=""
                   _lpchecked="1" class="contactform" flex="100">
                 <input type="hidden" name="u" value="3" data-name="u">
@@ -41,6 +41,17 @@
                     Send
                 </md-button>
             </form>
+        </div>
+        <div flex="100" layout="row" layout-align="space-between center" class="social">
+            <div class="left" flex="33"></div>
+            <div  flex="33">
+                <a href="{{ site.twitter }}"><i class="fa fa-fw fa-twitter"></i></a>
+                <a href="{{ site.youtube }}"><i class="fa fa-fw fa-youtube"></i></a>
+                <a href="{{ site.github }}"><i class="fa fa-fw fa-github"></i></a>
+            </div>
+            <div  flex="33" class="copyright">
+                <i class="fa fa-copyright"></i> 2017 AxonIQ. all rights reserved.
+            </div>
         </div>
     </div>
 </div>

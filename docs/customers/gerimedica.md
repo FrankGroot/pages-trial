@@ -4,8 +4,7 @@ title: Gerimedica
 permalink: /customers/gerimedica
 logo: img/customers/gerimedica.png
 link: http://www.gerimedica.nl
-quote: “Since engaging with Trifork as our technological partner in developing Ysis 2.0. their expertise & insight has given us significant return on investment”, says Thomas Ferguson, CEO of GeriMedica BV.
-quote-image: http://trifork.com/wp-content/uploads/2014/09/Thomas-Ferguson.jpeg
+author: thomasferguson
 ---
 ## GeriMedica is a Dutch company founded in 2007 by a small group of passionate medical professionals. The founders have one single driving force inspiring them; namely to make innovative changes and improvements to patient health care and treatment delivery.
 

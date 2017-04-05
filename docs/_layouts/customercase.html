@@ -4,27 +4,47 @@ layout: default
 <div class="banner">
     <div class="container">
         <h1>{{ page.title }}</h1>
-
     </div>
 </div>
 <div class="container">
-    <article>
-        <div class="customer-image">
-            {% if page.logo %}
-            <img src="{{ site.baseurl }}{{ page.logo }}">
-            {% endif %}
-            {% if page.quote %}
-            <div class="customer-quote">
-                {% if page.quote-image %}
-                <img src="{{ page.quote-image }}">
-                {% endif %}
-                <span>{{ page.quote }}</span>
-                <div class="external-link">
-                    <a href="{{ page.link}}">{{ page.title }} website</a>
+    <div layout="row">
+
+        <article flex="75">
+            {{ page.content | markdownify }}
+        </article>
+
+        <div class="author" flex="25">
+            <div class="customer-case">
+                {% assign author = site.data.authors.[page.author] %}
+
+                {% if author.quote %}
+                <div class="customer-quote">
+                    {% if author.image %}
+                    <div class="author-img">
+                        <img src="{{ author.image }}">
+                    </div>
+                    {% endif %}
+                    <div class="author-details">
+                        <div class="small">{{ author.title}}</div>
+                        <h3>{{ author.first}} {{ author.last }}</h3>
+                        <span>{{ author.quote }}</span>
+                        <div class="external-link">
+                            <a href="{{ page.link}}">
+                                {% if page.logo %}
+                                <img src="{{ site.baseurl }}{{ page.logo }}">
+                                {% else %}
+                                {{ page.title }} website
+                                {% endif %}
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                {% endif %}
             </div>
-            {% endif %}
+
+            <div class="calltoaction">
+                Eliska Form Here :)
+            </div>
         </div>
-        {{ page.content | markdownify }}
-    </article>
+    </div>
 </div>

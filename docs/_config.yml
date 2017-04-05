@@ -5,8 +5,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Axon Framework is tha bomb! developer support and enterprise support options available.
 baseurl: "/pages-trial/" # the subpath of your site, e.g. /blog/
 url: "http://axonframework.org" # the base hostname & protocol for your site
-twitter_username: axonframework
-github_username:  axonframework
+twitter: https://twitter.com/axonframework
+github:  https://github.com/axonframework
+youtube:  https://www.youtube.com/playlist?list=PLnwrDvSv4WM-yk-IgdDOlQxkF0_wCd0Sh
 #google_play: ''
 #google_plus_com: '00000'  # Community link
 #google_plus_per: ''  #Personal link

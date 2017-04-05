@@ -15,10 +15,10 @@
                             <div class="date">
                                 {{ event.startdate | date: "%e" }}{% if event.enddate %}-{{event.enddate|date:"%e"|replace:" ",""}}{% endif %}
                             </div>
-                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"}}
+                            <div class="small"><i class="fa">schedule</i> {{ event.startdate | date: "%R %Z"}}
                             </div>
                             {% if event.location %}
-                            <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
+                            <div class="small"><i class="fa">room</i> {{ event.location }}</div>
                             {% endif %}
                         </div>
                     </div>
@@ -38,14 +38,14 @@
                             <div class="eventtype">{{ event.type }}</div>
                             <h3>{{ event.title }}</h3>
                             <span class="summary">{{ event.summary}}</span>
-                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}
+                            <div class="small"><i class="fa">event</i> {{ event.startdate | date: "%x" }}
                                 {% if event.enddate %}-{{ event.enddate | date: "%x" |replace:" ",""}}{% endif %}
                             </div>
-                            <div class="small"><i class="material-icons">schedule</i> {{ event.startdate | date: "%R %Z"
+                            <div class="small"><i class="fa">schedule</i> {{ event.startdate | date: "%R %Z"
                                 }}
                             </div>
                             {% if event.location %}
-                            <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
+                            <div class="small"><i class="fa">room</i> {{ event.location }}</div>
                             {% endif %}
                         </div>
                         {% if event.linktext %}
@@ -64,10 +64,10 @@
                             <div class="eventtype">{{ event.type }}</div>
                             <h3>{{ event.title }}</h3>
                             {% if event.location %}
-                            <div class="small"><i class="material-icons">event</i> {{ event.startdate | date: "%x" }}{%
+                            <div class="small"><i class="fa">event</i> {{ event.startdate | date: "%x" }}{%
                                 if event.enddate %}-{{ event.enddate | date: "%x" |replace:" ","" }}{% endif %}
                             </div>
-                            <div class="small"><i class="material-icons">room</i> {{ event.location }}</div>
+                            <div class="small"><i class="fa">room</i> {{ event.location }}</div>
                             {% endif %}
                         </a>
                     </div>

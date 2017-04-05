@@ -7,8 +7,33 @@ layout: default
   </div>
 </div>
 <div class="container">
-  <article>
-    {{ page.content | markdownify }}
-  </article>
+  <div layout="row">
 
+    <article flex="75">
+      {{ page.content | markdownify }}
+    </article>
+
+    <div class="author" flex="25">
+      <div class="customer-case">
+        {% assign author = site.data.authors.[page.author] %}
+
+        {% if author.quote %}
+        <div class="customer-quote">
+          {% if author.image %}
+          <div class="author-img">
+            <img src="{{ author.image | prepend: site.baseurl}}">
+          </div>
+          {% endif %}
+          <div class="author-details">
+            <div class="small">{{ author.title}}</div>
+            <h3>{{ author.first}} {{ author.last }}</h3>
+            <span>{{ author.first }}(<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>) {{ author.resume }}</span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      <iframe src="https://trifork.activehosted.com/f/6"></iframe>
+    </div>
+  </div>
 </div>
