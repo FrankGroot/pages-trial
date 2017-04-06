@@ -52,14 +52,23 @@
 
 .customer-case {
   display: block;
-  width: 100%;
   float: right;
   box-sizing: border-box;
   margin-top: 20px;
+  width: 25%;
+  @media (max-width: 599px) {
+    width:100%;
+  }
 
   .author-img {
-    width: 100%;
     position: relative;
+    width: 100%;
+
+    @media (max-width: 599px) {
+      width: 25%;
+      float: left;
+      margin-right:10px;
+    }
 
     &:after {
       content: "";
@@ -79,6 +88,10 @@
   }
   .author-details {
     padding: 20px;
+    @media (max-width: 599px) {
+      padding: 0px;
+    }
+
   }
   h3 {
     margin: 2px 0px;
@@ -87,14 +100,22 @@
 }
 
 .customer-quote {
-  width: 100%;
   float: right;
   display: block;
   background-color: #e4e4e4;
   box-sizing: border-box;
+  width: 100%;
 
   img {
     width: 100%;
+  }
+  @media (max-width: 599px) {
+    .external-link {
+      img {
+        width: 70%;
+        float: right;
+      }
+    }
   }
 }
 

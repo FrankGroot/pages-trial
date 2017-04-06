@@ -2,38 +2,35 @@
 layout: default
 ---
 <div class="banner">
-  <div class="container">
-    <h1>{{ page.title }}</h1>
-  </div>
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+    </div>
 </div>
 <div class="container">
-  <div layout="row">
+    <div layout="row">
+        <article flex="100">
+            <div class="customer-case">
+                {% assign author = site.data.authors.[page.author] %}
 
-    <article flex="75">
-      {{ page.content | markdownify }}
-    </article>
+                {% if author.quote %}
+                <div class="customer-quote">
+                    {% if author.image %}
+                    <div class="author-img">
+                        <img src="{{ author.image | prepend: site.baseurl}}">
+                    </div>
+                    {% endif %}
+                    <div class="author-details">
+                        <div class="small">{{ author.title}}</div>
+                        <h3>{{ author.first}} {{ author.last }}</h3>
+                        <span>{{ author.first }}(<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>) {{ author.resume }}</span>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            <!--<iframe src="https://trifork.activehosted.com/f/6"></iframe>-->
+            {{ page.content | markdownify }}
+        </article>
 
-    <div class="author" flex="25">
-      <div class="customer-case">
-        {% assign author = site.data.authors.[page.author] %}
 
-        {% if author.quote %}
-        <div class="customer-quote">
-          {% if author.image %}
-          <div class="author-img">
-            <img src="{{ author.image | prepend: site.baseurl}}">
-          </div>
-          {% endif %}
-          <div class="author-details">
-            <div class="small">{{ author.title}}</div>
-            <h3>{{ author.first}} {{ author.last }}</h3>
-            <span>{{ author.first }}(<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>) {{ author.resume }}</span>
-          </div>
-        </div>
-        {% endif %}
-      </div>
-
-      <iframe src="https://trifork.activehosted.com/f/6"></iframe>
     </div>
-  </div>
 </div>

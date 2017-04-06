@@ -9,11 +9,7 @@ layout: default
 <div class="container">
     <div layout="row">
 
-        <article flex="75">
-            {{ page.content | markdownify }}
-        </article>
-
-        <div class="author" flex="25">
+        <article flex="100">
             <div class="customer-case">
                 {% assign author = site.data.authors.[page.author] %}
 
@@ -42,9 +38,7 @@ layout: default
                 {% endif %}
             </div>
 
-            <!--<div class="calltoaction">-->
-                <!--Eliska Form Here :)-->
-            <!--</div>-->
-        </div>
+            {{ page.content | markdownify }}
+        </article>
     </div>
 </div>
