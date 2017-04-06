@@ -1,4 +1,4 @@
-- advanced:
+advanced:
   type: training
   startdate: 2017-05-08T08:00:00Z
   enddate: 2017-05-09T16:00:00Z
@@ -10,7 +10,7 @@
   image: img/bb8.png
   rows: 2
   cols: 2
-- pragmatic:
+pragmatic:
   type: meetup
   startdate: 2017-06-08T08:00:00Z
   title: Pragmatic Microservices
@@ -19,7 +19,7 @@
   link: https://skillsmatter.com/conferences/8231-ddd-exchange-2017
   linktext: Join
   cols: 2
-- conference:
+conference:
   type: conference
   startdate: 2017-04-27T09:00:00Z
   enddate: 2017-04-28T17:00:00Z

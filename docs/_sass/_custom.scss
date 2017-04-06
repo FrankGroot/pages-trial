@@ -28,3 +28,29 @@ h1, h2, h3, h4, h5 {
     vertical-align: bottom;
   }
 }
+
+.two-column {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  padding-bottom: 15px;
+  border-bottom: 1px lightgrey solid;
+
+  @media screen and (max-width: 599px)   {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+.call-to-action {
+  width: 280px;
+  height:280px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: right;
+  @media screen and (max-width: 599px)   {
+     width:100%;
+  }
+
+}
