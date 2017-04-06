@@ -43,6 +43,10 @@ disqus_shortname: 'disqusname'
 # Build settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
 
 gems:
   - jemoji

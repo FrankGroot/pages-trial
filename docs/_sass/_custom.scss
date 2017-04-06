@@ -42,7 +42,13 @@ h1, h2, h3, h4, h5 {
     column-count: 1;
   }
 }
-
+code {
+  background-color: whitesmoke;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0px;
+}
 .call-to-action {
   width: 300px;
   height:300px;
