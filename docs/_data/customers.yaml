@@ -2,7 +2,7 @@
   url: http://www.anwb.nl
   img: img/customers/anwb.png
 - huawei:
-  url: http://www.huawei.com
+  url:
   img: img/customers/huawei.png
 - gerimedica:
   url: customers/gerimedica
@@ -14,7 +14,7 @@
   url: http://www.anwb.nl
   img: img/customers/anwb.png
 - huawei:
-  url: http://www.huawei.com
+  url:
   img: img/customers/huawei.png
 - gerimedica:
   url: http://www.gerimedica.nl

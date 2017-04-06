@@ -5,9 +5,13 @@
                       md-gutter="5%" md-row-height="1:1">
             {% for customer in site.data.customers limit:6 %}
                 <md-grid-tile class="customer">
+                    {% if customer.url %}
                     <a href="{{ customer.url }}">
+                    {% endif %}
                         <img src="{{ customer.img }}">
+                    {% if customer.url %}
                     </a>
+                    {% endif %}
                 </md-grid-tile>
             {% endfor %}
         </md-grid-list>
