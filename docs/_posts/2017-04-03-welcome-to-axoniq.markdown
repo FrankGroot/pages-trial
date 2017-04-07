@@ -34,14 +34,14 @@ This is just an example blogpost without any meaning
 This is just an example blogpost without any meaning
 
 It shows howto include code in a post at least :)
-```Java
-    @Bean
-    public MongoEventStorageEngine eventStorageEngine() throws Exception {
-        XStreamSerializer serializer = new XStreamSerializer();
-        serializer.getXStream().registerConverter(new JodaConverter("string"));
-        return new MongoEventStorageEngine(serializer, null, getAxonMongoEventTemplate(),
-                new DocumentPerEventStorageStrategy());
-    }
+```java
+@Bean
+public MongoEventStorageEngine eventStorageEngine() throws Exception {
+    XStreamSerializer serializer = new XStreamSerializer();
+    serializer.getXStream().registerConverter(new JodaConverter());
+    return new MongoEventStorageEngine(serializer, null, getAxonMongoEventTemplate(),
+            new DocumentPerEventStorageStrategy());
+}
 ```
 
 Yeah :baby:!
