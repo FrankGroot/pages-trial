@@ -1,0 +1,31 @@
+framework:
+  name: Axon Framework
+  link: index
+services:
+  name: Services
+  link: services
+  submenu:
+    review:
+      name: Architectual reviews
+      link: services/reviews
+    training:
+      name: Axon Training
+      link: services/training
+    support:
+      name: Development Support
+      link: services/support
+    projects:
+      name: Projects
+      link: services/projects
+explore:
+  name: Explore
+  link: explore
+community:
+  name: Community
+  link: community
+blog:
+  name: Blog
+  link: blog
+platform:
+  name: Axon Platform
+  link: platform

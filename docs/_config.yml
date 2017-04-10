@@ -17,26 +17,6 @@ youtube:  https://www.youtube.com/playlist?list=PLnwrDvSv4WM-yk-IgdDOlQxkF0_wCd0
 post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
-mainnav:
-  option1:
-    name: Axon Framework
-    link: index
-  option2:
-    name: Services
-    link: services
-  option3:
-    name: Explore
-    link: explore
-  option4:
-    name: Community
-    link: community
-  option5:
-    name: Blog
-    link: blog
-  option6:
-    name: Axon Platform
-    link: platform
-
 disqus: true
 disqus_shortname: 'disqusname'
 

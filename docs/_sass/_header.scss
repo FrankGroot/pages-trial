@@ -44,3 +44,24 @@
 .md-button._md-nav-button {
     padding: 20px 16px;
 }
+.nav-menu button, .nav-menu a {
+  margin: auto;
+  margin-top: -3px;
+  padding: 0px 0px;
+  min-height: 0px;
+  line-height: 24px;
+}
+
+md-menu-content{
+  &:after {
+    position: absolute;
+    content: ' ';
+    left: 20%;
+    top: -15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+  }
+}
