@@ -1,0 +1,61 @@
+.axoniq-form {
+
+  font-size: 14px;
+
+  textarea {
+    width: 100%;
+    vertical-align: top;
+    overflow: auto;
+    border-radius: 3px;
+    resize: none;
+    border: none;
+    padding: 6px 10px;
+    box-sizing: border-box;
+  }
+
+  input {
+    border-radius: 3px;
+    margin-top:10px;
+    box-sizing: border-box;
+    border: none;
+    overflow: auto;
+  }
+  button {
+    margin-top: 10px;
+  }
+
+}
+
+.contactform {
+
+  input {
+    width: 50%;
+    padding: 3px 10px;
+  }
+
+  button {
+    margin-left: 2%;
+    width: 48%;
+    float: right;
+    padding: 3px 10px;
+  }
+
+}
+
+.form-include {
+  background-color: #434a56;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width:100%;
+  }
+}

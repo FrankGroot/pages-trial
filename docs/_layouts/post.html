@@ -26,6 +26,11 @@ layout: default
                     </div>
                 </div>
                 {% endif %}
+                {% if page.form %}
+                <div class="axoniq-form form-include">
+                    {% include {{ page.form }} %}
+                </div>
+                {% endif %}
             </div>
             <!--<iframe src="https://trifork.activehosted.com/f/6"></iframe>-->
             {{ page.content | markdownify }}
