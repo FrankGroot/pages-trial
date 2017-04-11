@@ -29,6 +29,10 @@
     color: red;
   }
 
+  ._has_error {
+    border: 1px solid red;
+  }
+
 }
 
 .contactform {
@@ -72,8 +76,10 @@
   padding: 20px;
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
-
+  width: 72%;
+  @media (max-width: 599px) {
+    width: 100%;
+  }
   input {
     width: 100%;
     padding-left: 10px;
