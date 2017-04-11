@@ -9,10 +9,10 @@ layout: default
 <div class="container">
     <div layout="row">
         <article flex="100">
-            <div class="customer-case">
+            <div class="customer-case" flex-order-xs="2">
                 {% assign author = site.data.authors.[page.author] %}
 
-                {% if author.quote %}
+                {% if author.resume %}
                 <div class="customer-quote">
                     {% if author.image %}
                     <div class="author-img">
@@ -22,20 +22,21 @@ layout: default
                     <div class="author-details">
                         <div class="small">{{ author.title}}</div>
                         <h3>{{ author.first}} {{ author.last }}</h3>
-                        <span>{{ author.first }}(<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>) {{ author.resume }}</span>
+                        <span>{{ author.first }} (<a href="https://twitter.com/{{ author.twitter }}"> @{{ author.twitter }} </a>) {{ author.resume }}</span>
                     </div>
                 </div>
                 {% endif %}
                 {% if page.form %}
-                <div class="axoniq-form form-include">
+                <div class="axoniq-form form-include" hide-xs>
                     {% include {{ page.form }} %}
                 </div>
                 {% endif %}
             </div>
-            <!--<iframe src="https://trifork.activehosted.com/f/6"></iframe>-->
             {{ page.content | markdownify }}
-        </article>
-
-
+            {% if page.form %}
+            <div class="axoniq-form form-include" hide-gt-xs>
+                {% include {{ page.form }} %}
+            </div>
+            {% endif %}        </article>
     </div>
 </div>

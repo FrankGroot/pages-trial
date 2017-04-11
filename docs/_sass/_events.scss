@@ -18,14 +18,18 @@
       border-left: 6px solid purple;
       height: 100%;
     }
+    &.webinar {
+      border-left: 6px solid deeppink;
+      height: 100%;
+    }
     &.conference {
       border-left: 6px solid limegreen;
       height: 100%;
 
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
     }
     .vertical {
       padding: 0px 6px;

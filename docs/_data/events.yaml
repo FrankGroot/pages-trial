@@ -28,3 +28,12 @@ conference:
   link: https://skillsmatter.com/conferences/8231-ddd-exchange-2017
   rows: 1
   cols: 2
+webinar:
+  type: webinar
+  startdate: 2017-04-20T14:00:00Z
+  enddate: 2017-04-20T15:00:00Z
+  title: Messaging Patterns in Event-Driven Microservices Architetures
+  link: events/messaging-paterns.html
+  linktext: Join
+  rows: 1
+  cols: 2

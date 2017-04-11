@@ -42,9 +42,7 @@
         </div>
         {% if event.linktext %}
         <div flex="15">
-            <button class="vertical md-button md-warn md-raised" href="{{ event.link }}">{{
-                event.linktext }}
-            </button>
+            <a class="vertical md-button md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}</a>
         </div>
         {% endif %}
     </div>

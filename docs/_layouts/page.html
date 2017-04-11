@@ -16,7 +16,35 @@ layout: default
         {% include event.html %}
       </div>
       {% endif %}
+
+      <div class="customer-case">
+        {% assign author = site.data.authors.[page.author] %}
+
+        {% if author.resume %}
+        <div class="customer-quote">
+          {% if author.image %}
+          <div class="author-img">
+            <img src="{{ author.image | prepend: site.baseurl}}">
+          </div>
+          {% endif %}
+          <div class="author-details">
+            <div class="small">{{ author.title}}</div>
+            <h3>{{ author.first}} {{ author.last }}</h3>
+            <span>{{ author.first }} ( <a href="https://twitter.com/{{ author.twitter }}"> @{{ author.twitter }}</a> ) {{ author.resume }}</span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+
       {{ content | markdownify }}
+
+      {% if page.form %}
+      <div class="axoniq-form form-event" flex="75">
+        {% include {{ page.form }} %}
+      </div>
+      {% endif %}
+
     </div>
   </article>
 </div>
