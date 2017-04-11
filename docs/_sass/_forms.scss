@@ -25,6 +25,10 @@
     margin-top: 10px;
   }
 
+  ._error-inner {
+    color: red;
+  }
+
 }
 
 .contactform {
@@ -53,6 +57,7 @@
 
   input {
     width: 100%;
+    padding-left: 10px;
   }
 
   button {
