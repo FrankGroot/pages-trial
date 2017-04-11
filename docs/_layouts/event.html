@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<div class="container">
+    {% if page.event %}
+    {% assign event = site.data.events.[page.event] %}
+    <article>
+        <div class="main-content">
+            <div class="customer-case">
+                {% assign author = site.data.authors.[page.author] %}
+
+                {% if author.resume %}
+                <div class="customer-quote">
+                    {% if author.image %}
+                    <div class="author-img">
+                        <img src="{{ author.image | prepend: site.baseurl}}">
+                    </div>
+                    {% endif %}
+                    <div class="author-details">
+                        <div class="small">{{ author.title}}</div>
+                        <h3>{{ author.first}} {{ author.last }}</h3>
+                        <span>{{ author.first }} ( <a href="https://twitter.com/{{ author.twitter }}"> @{{ author.twitter }}</a> ) {{ author.resume }}</span>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            <div>
+                <h4>Starts: {{ event.startdate | date: "%x %R%Z"}} </h4>
+            </div>
+            <h1>{{ event.title }}</h1>
+            <div class="small">{{ event.type }}</div>
+
+            {{ event.summary }}
+
+            {{ content | markdownify }}
+
+            {% if page.form %}
+            <div class="axoniq-form form-event">
+                {% include {{ page.form }} %}
+            </div>
+            {% endif %}
+
+        </div>
+    </article>
+    {% endif %}
+</div>

@@ -32,8 +32,10 @@ webinar:
   type: webinar
   startdate: 2017-04-20T14:00:00Z
   enddate: 2017-04-20T15:00:00Z
-  title: Messaging Patterns in Event-Driven Microservices Architetures
-  link: events/messaging-paterns.html
+  title: Messaging Patterns in Event-Driven Microservices Architectures
+  summary: Domain Driven Design (DDD) and Command Query Responsibility Segregation (CQRS) are known to provide us with means to tackle complexity within an application. However, they also provide us with patterns and guidelines to manage the complexity of large scale, distributed environments. Join the meetup and share your thoughts and experiences on this topic.
+  image: img/bb8.png
+  link: events/messaging-patterns.html
   linktext: Join
   rows: 1
   cols: 2

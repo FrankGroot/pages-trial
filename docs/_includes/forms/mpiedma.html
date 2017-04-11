@@ -1,83 +1,103 @@
-<form method="POST" action="https://trifork.activehosted.com/proc.php" id="_form_6_" novalidate>
-    <input type="hidden" name="u" value="6"/>
-    <input type="hidden" name="f" value="6"/>
+<form method="POST" action="https://trifork.activehosted.com/proc.php" id="_form_7_"
+      class="_form _form_7 _inline-form  _dark" novalidate>
+    <input type="hidden" name="u" value="7"/>
+    <input type="hidden" name="f" value="7"/>
     <input type="hidden" name="s"/>
     <input type="hidden" name="c" value="0"/>
     <input type="hidden" name="m" value="0"/>
     <input type="hidden" name="act" value="sub"/>
     <input type="hidden" name="v" value="2"/>
     <div class="_form-content">
-        <div>
-            <h3>
-                Request for information
-            </h3>
+        <div class="_form_element _x36182514 _full_width _clear">
+            <h4 class="_form-title">
+                Subscribe for a 45-min complimentary Webinar
+            </h4>
         </div>
-        <div>
-            <div>
-                    Project, Support, Consulting, Demo inquiry
+        <div class="_form_element _x79269409 _full_width _clear">
+            <div class="_html-code">
+                <p>
+                    In this webinar, we will take a DDD/CQRS approach on implementing Microservices, focusing on the
+                    messaging between them. .
+                </p>
             </div>
         </div>
-        <div>
-            <!--<label>-->
-                <!--First Name-->
-            <!--</label>-->
-            <div>
+        <div class="_form_element _x49941848 _full_width ">
+            <div class="_field-wrapper">
                 <input type="text" name="firstname" placeholder="Type your first name"/>
             </div>
         </div>
-        <div>
-            <!--<label>-->
-                <!--Last Name-->
-            <!--</label>-->
-            <div>
+        <div class="_form_element _x94806229 _full_width ">
+            <div class="_field-wrapper">
                 <input type="text" name="lastname" placeholder="Type your last name"/>
             </div>
         </div>
-        <div>
-            <!--<label>-->
-                <!--Email*-->
-            <!--</label>-->
-            <div>
+        <div class="_form_element _x76780412 _full_width ">
+            <div class="_field-wrapper">
                 <input type="text" name="email" placeholder="Type your email" required/>
             </div>
         </div>
-        <div>
-            <!--<label>-->
-                <!--Organization-->
-            <!--</label>-->
-            <div>
+        <div class="_form_element _x50614631 _full_width ">
+            <div class="_field-wrapper">
                 <input type="text" name="organization" placeholder="Type your organization"/>
             </div>
         </div>
-        <div>
-            <!--<label>-->
-                <!--Job Title-->
-            <!--</label>-->
-            <div>
-                <input type="text" name="field[5]" value="" placeholder="Type your job title"/>
+        <div class="_form_element _field5 _full_width ">
+            <div class="_field-wrapper">
+                <input type="text" name="field[5]" value="" placeholder="Type your Job Title"/>
             </div>
         </div>
-        <div>
-            <label>
-                Enter your request
-            </label>
-            <div>
+        <div flex="100">
+            <h5 class="_form-label">
+                Do You use Axon Framework?
+            </h5>
+            <div class="_row">
+                <label for="field_6Yes, using Axon in production">
+                    <input id="field_6Yes, using Axon in production" type="radio" name="field[6]"
+                           value="Yes, using Axon in production">
+                    Yes, using Axon in production
+                </label>
+            </div>
+            <div class="_row">
+                <label for="field_6Yes, but not yet in production">
+                    <input id="field_6Yes, but not yet in production" type="radio" name="field[6]"
+                           value="Yes, but not yet in production">
+                    Yes, but not yet in production
+                </label>
+            </div>
+            <div class="_row">
+                <label for="field_6Yes, experimenting">
+                    <input id="field_6Yes, experimenting" type="radio" name="field[6]" value="Yes, experimenting">
+                </label>
+                Yes, experimenting
+            </div>
+            <div class="_row">
+                <label for="field_6Not yet">
+                    <input id="field_6Not yet" type="radio" name="field[6]" value="Not yet">
+                </label>
+                  Not yet
+            </div>
+        </div>
+        <div class="_form_element _field1 _full_width ">
+            <h5 class="_form-label">
+                Comment
+            </h5>
+            <div class="_field-wrapper">
                 <textarea name="field[1]" placeholder=""></textarea>
             </div>
         </div>
-        <div>
-            <button id="_form_6_submit" class="md-accent md-raised md-button md-ink-ripple _submit" type="submit">
-                Submit
+        <div class="_button-wrapper _full_width">
+            <button id="_form_7_submit" class="md-accent md-raised md-button md-ink-ripple _submit" type="submit">
+                Subscribe
             </button>
         </div>
-        <div>
+        <div class="_clear-element">
         </div>
     </div>
     <div class="_form-thank-you" style="display:none;">
     </div>
 </form>
 <script type="text/javascript">
-    window.cfields = {"5": "job_title", "1": "comment"};
+    window.cfields = {"5": "job_title", "6": "do_you_use_axon_framework", "1": "comment"};
     window._show_thank_you = function (id, message, trackcmp_url) {
         var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
         form.querySelector('._form-content').style.display = 'none';
@@ -147,9 +167,8 @@
             }
         }
         var _removed = false;
-        var form_to_submit = document.getElementById('_form_6_');
-        var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [],
-            submitted = false;
+        var form_to_submit = document.getElementById('_form_7_');
+        var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
 
         var getUrlParam = function (name) {
             var regexStr = '[\?&]' + name + '=([^&#]*)';
@@ -370,7 +389,7 @@
             if (validate_form()) {
                 // use this trick to get the submit button & disable it using plain javascript
                 document.querySelector('[id^="_form"][id$="_submit"]').disabled = true;
-                var serialized = _form_serialize(document.getElementById('_form_6_'));
+                var serialized = _form_serialize(document.getElementById('_form_7_'));
                 var err = form_to_submit.querySelector('._form_error');
                 err ? err.parentNode.removeChild(err) : false;
                 _load_script('https://trifork.activehosted.com/proc.php?' + serialized + '&jsonp=true');
