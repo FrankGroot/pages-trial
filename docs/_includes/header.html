@@ -9,23 +9,23 @@
                 nav-bar-aria-label="navigation links">
         {% for option in site.data.mainnav %}
         {% if option[1].submenu %}
-        <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
-                     value="{{ option[1].name }}" class="nav-menu">
-            <md-menu md-offset="-12 50" md-prevent-menu-close>
-                <md-button ng-click="$mdOpenMenu($event)">
-                    {{ option[1].name }}
-                </md-button>
-                <md-menu-content width="4">
-                    {% for subitem in option[1].submenu %}
-                    <md-menu-item>
-                        <md-button href="{{ subitem[1].link | prepend: site.baseurl }}">
-                            {{ subitem[1].name }}
-                        </md-button>
-                    </md-menu-item>
-                    {% endfor %}
-                </md-menu-content>
-            </md-menu>
-        </md-nav-item>
+        <!--<md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}" value="{{ option[1].name }}" class="nav-menu">-->
+        <md-menu md-offset="0 65">
+            <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
+                         value="{{ option[1].name }}" ng-click="$mdOpenMenu($event)" ng-mouseenter="$mdOpenMenu($event)">
+                {{ option[1].name }}
+            </md-nav-item>
+            <md-menu-content width="4">
+                {% for subitem in option[1].submenu %}
+                <md-menu-item>
+                    <md-button href="{{ subitem[1].link | prepend: site.baseurl }}">
+                        {{ subitem[1].name }}
+                    </md-button>
+                </md-menu-item>
+                {% endfor %}
+            </md-menu-content>
+        </md-menu>
+        <!--</md-nav-item>-->
         {% else %}
         <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
                      value="{{ option[1].name }}">
