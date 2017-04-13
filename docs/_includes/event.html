@@ -17,7 +17,7 @@
     <div class="content">
         <div class="eventtype">{{ event.type }}</div>
         <h3>{{ event.title }}</h3>
-        <span class="summary">{{ event.summary}}</span>
+        <span class="summary" maxlength="150">{{ event.summary}}</span>
         <md-button flex="100" class="md-warn md-raised" href="{{ event.link }}">{{ event.linktext }}
         </md-button>
     </div>

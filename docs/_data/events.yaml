@@ -15,9 +15,21 @@ pragmatic:
   startdate: 2017-06-08T08:00:00Z
   title: Pragmatic Microservices
   location: Amsterdam
-  summary: Allard on his journey with a big ball of dung
+  summary: From monolith to event based microservices
   link: https://skillsmatter.com/conferences/8231-ddd-exchange-2017
   linktext: Join
+  cols: 2
+webinar:
+  type: webinar
+  startdate: 2017-04-20T14:00:00Z
+  enddate:
+  title: Messaging Patterns in Event-Driven Microservices Architectures
+  summary: Domain Driven Design (DDD) and Command Query Responsibility Segregation (CQRS) are known to provide us with means to tackle complexity within an application. However, they also provide us with patterns and guidelines to manage the complexity of large scale, distributed environments. Join the meetup and share your thoughts and experiences on this topic.
+  location:
+  image: img/authors/allardbuijze.jpg
+  link: events/messaging-patterns.html
+  linktext: Join
+  rows: 2
   cols: 2
 conference:
   type: conference
@@ -25,17 +37,8 @@ conference:
   enddate: 2017-04-28T17:00:00Z
   title: DDD eXchange 2017
   location: London
+  summary: Join the Axon team at the booth
   link: https://skillsmatter.com/conferences/8231-ddd-exchange-2017
-  rows: 1
-  cols: 2
-webinar:
-  type: webinar
-  startdate: 2017-04-20T14:00:00Z
-  enddate: 2017-04-20T15:00:00Z
-  title: Messaging Patterns in Event-Driven Microservices Architectures
-  summary: Domain Driven Design (DDD) and Command Query Responsibility Segregation (CQRS) are known to provide us with means to tackle complexity within an application. However, they also provide us with patterns and guidelines to manage the complexity of large scale, distributed environments. Join the meetup and share your thoughts and experiences on this topic.
-  image: img/bb8.png
-  link: events/messaging-patterns.html
-  linktext: Join
+  image:
   rows: 1
   cols: 2
