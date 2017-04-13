@@ -20,18 +20,30 @@
       display: block;
     }
 
-    &.meetup {
+    &.purple {
       border-left: 6px solid purple;
       height: 100%;
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#9933cc), to(#4919ab))0 100% 0 1% stretch;
     }
     &.webinar {
       border-left: 6px solid deeppink;
       height: 100%;
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#f1258a), to(#b133cc))0 100% 0 1% stretch;
     }
     &.conference {
       border-left: 6px solid limegreen;
       height: 100%;
       -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#98cc0e), to(#009900))0 100% 0 1% stretch;
+    }
+    &.training {
+      border-left: 6px solid orangered;
+      height: 100%;
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#fb6801), to(#f12548))0 100% 0 1% stretch;
+    }
+    &.meetup {
+      border-left: 6px solid #006bae;
+      height: 100%;
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#006bae), to(#0da7a5))0 100% 0 1% stretch;
     }
     a {
       text-decoration: none;
