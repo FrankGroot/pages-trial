@@ -31,7 +31,7 @@
     &.conference {
       border-left: 6px solid limegreen;
       height: 100%;
-
+      -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#98cc0e), to(#009900))0 100% 0 1% stretch;
     }
     a {
       text-decoration: none;
