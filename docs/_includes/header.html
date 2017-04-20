@@ -47,6 +47,19 @@
                 <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
                              value="{{ option[1].name }}">
                     {{ option[1].name }}
+                    {% if option[1].submenu %}
+                    <md-menu md-offset="0 0">
+                        <md-menu-content width="4">
+                            {% for subitem in option[1].submenu %}
+                            <md-menu-item>
+                                <md-button href="{{ subitem[1].link | prepend: site.baseurl }}">
+                                    {{ subitem[1].name }}
+                                </md-button>
+                            </md-menu-item>
+                            {% endfor %}
+                        </md-menu-content>
+                    </md-menu>
+                    {% endif %}
                 </md-nav-item>
                 {% endfor %}
             </md-nav-bar>
