@@ -1,7 +1,7 @@
 <div layout="column" layout-align="space-between stretch" class="event {{event.type}}">
     <!--On multiple rows: display imageheader-->
     {% if event.rows > 1 %}
-    <div class="eventheader" style="background-image: url('{{ event.image }}') ">
+    <div class="eventheader" style="background-image: url('{{ event.image | prepend: site.baseurl }}') ">
         <div class="cal">
             <div class="month">{{ event.startdate | date: "%b" }}</div>
             <div class="date">
