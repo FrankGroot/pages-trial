@@ -1,3 +1,19 @@
+allardbuize:
+  title: Chief Technology Officer
+  first: Allard
+  last: Buijze
+  twitter: allardbz
+  resume:  is CTO of Trifork Amsterdam and founder of Axon Framework. The last years, he has been investigating and applying CQRS to a number of projects. As a result, he created the Axon Framework, an open source Java framework that helps developers create scalable and extensible applications. Axon has a growing community and has already been successfully introduced in several high-profile projects around the world.
+  quote: Don't call me Boss unless your a dog
+  image: img/authors/allardbuijze.jpg
+trifork:
+  title: think software . . .
+  first: Trifork
+  last:
+  twitter: triforkams ‏
+  resume: develops IT solutions & organizes international software development conferences and trainings. Producer of GOTO Conferences and GOTO Academy.
+  quote:
+  image: img/customers/trifork.png
 frankgroot:
   title: Lead Architect
   first: Frank
@@ -14,14 +30,6 @@ joriskuipers:
   resume: has worked as a hands-on architect for Trifork over the last four years, in markets as diverse as education, healthcare, news media and government. Before that he was a trainer and consultant for Spring Source, and he still teaches the occasional Spring training for the GOTO Academy. He has been working with Enterprise Java for more than 15 years.
   quote: Whenever I'm looking for answers, I talk to myself.
   image: img/authors/joriskuipers.jpeg
-allardbuize:
-  title: Chief Technology Officer
-  first: Allard
-  last: Buijze
-  twitter: allardbz
-  resume:  is CTO of Trifork Amsterdam and founder of Axon Framework. The last years, he has been investigating and applying CQRS to a number of projects. As a result, he created the Axon Framework, an open source Java framework that helps developers create scalable and extensible applications. Axon has a growing community and has already been successfully introduced in several high-profile projects around the world.
-  quote: Don't call me Boss unless your a dog
-  image: img/authors/allardbuijze.jpg
 thomasferguson:
   title: CEO
   first: Thomas
