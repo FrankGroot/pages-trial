@@ -3,10 +3,9 @@
 
 {% include head.html %}
 
-<body ng-app="AxonIQ" ng-cloak md-themes-disabled>
-<div layout="column" ng-controller="MainController">
-
-    {% include header.html %}
+<body ng-app="AxonIQ" ng-cloak md-themes-disabled ng-controller="MainController">
+{% include header.html %}
+<div layout="column" class="main-content" >
 
     {{ content }}
 

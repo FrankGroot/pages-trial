@@ -1,61 +1,63 @@
-<div class="container">
-    <div class="logo"></div>
-    <md-button class="menu md-icon-button md-no-focus" hide-gt-sm
-               ng-click="openSidenav()">
-        <i class="fa fa-bars"></i>
-    </md-button>
-    <md-nav-bar show-gt-sm hide
-                md-selected-nav-item="'{{ page.title }}'"
-                nav-bar-aria-label="navigation links">
-        {% for option in site.data.mainnav %}
-        {% if option[1].submenu %}
-        <!--<md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}" value="{{ option[1].name }}" class="nav-menu">-->
-        <md-menu md-offset="0 65">
-            <md-nav-item md-nav-href="#" name="{{ option[1].name }}"
-                         value="{{ option[1].name }}" ng-mouseenter="$mdMenu.open($event)">
-                {{ option[1].name }}
-            </md-nav-item>
-            <md-menu-content width="4">
-                {% for subitem in option[1].submenu %}
-                <md-menu-item>
-                    <md-button href="{{ subitem[1].link | prepend: site.baseurl }}">
-                        {{ subitem[1].name }}
-                    </md-button>
-                </md-menu-item>
-                {% endfor %}
-            </md-menu-content>
-        </md-menu>
-        <!--</md-nav-item>-->
-        {% else %}
-        <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
-                     value="{{ option[1].name }}">
-            {{ option[1].name }}
-        </md-nav-item>
-        {% endif %}
-        {% endfor %}
-    </md-nav-bar>
-    <md-sidenav
-            class="md-sidenav-left"
-            md-component-id="left"
-            md-whiteframe="4">
-        <md-nav-bar class="sidenav"
-                    mdNoInkBar=true
+<div class="topmenu">
+    <div class="container">
+        <div class="logo"></div>
+        <md-button class="menu md-icon-button md-no-focus" hide-gt-sm
+                   ng-click="openSidenav()">
+            <i class="fa fa-bars"></i>
+        </md-button>
+        <md-nav-bar show-gt-sm hide
                     md-selected-nav-item="'{{ page.title }}'"
                     nav-bar-aria-label="navigation links">
             {% for option in site.data.mainnav %}
+            {% if option[1].submenu %}
+            <!--<md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}" value="{{ option[1].name }}" class="nav-menu">-->
+            <md-menu md-offset="0 65">
+                <md-nav-item md-nav-href="#" name="{{ option[1].name }}"
+                             value="{{ option[1].name }}" ng-mouseenter="$mdMenu.open($event)">
+                    {{ option[1].name }}
+                </md-nav-item>
+                <md-menu-content width="4">
+                    {% for subitem in option[1].submenu %}
+                    <md-menu-item>
+                        <md-button href="{{ subitem[1].link | prepend: site.baseurl }}">
+                            {{ subitem[1].name }}
+                        </md-button>
+                    </md-menu-item>
+                    {% endfor %}
+                </md-menu-content>
+            </md-menu>
+            <!--</md-nav-item>-->
+            {% else %}
             <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
                          value="{{ option[1].name }}">
                 {{ option[1].name }}
             </md-nav-item>
+            {% endif %}
             {% endfor %}
         </md-nav-bar>
-        <!--<md-content layout-padding >-->
-        <!--{% for option in site.mainnav %}-->
-        <!--<md-button href="{{ option[1].link }}" name="{{ option[1].name }}" value="{{ option[1].name }}">-->
-        <!--{{ option[1].name }}-->
-        <!--</md-button>-->
-        <!--{% endfor %}-->
-        <!--</md-content>-->
+        <md-sidenav
+                class="md-sidenav-left"
+                md-component-id="left"
+                md-whiteframe="4">
+            <md-nav-bar class="sidenav"
+                        mdNoInkBar=true
+                        md-selected-nav-item="'{{ page.title }}'"
+                        nav-bar-aria-label="navigation links">
+                {% for option in site.data.mainnav %}
+                <md-nav-item md-nav-href="{{ option[1].link | prepend: site.baseurl }}" name="{{ option[1].name }}"
+                             value="{{ option[1].name }}">
+                    {{ option[1].name }}
+                </md-nav-item>
+                {% endfor %}
+            </md-nav-bar>
+            <!--<md-content layout-padding >-->
+            <!--{% for option in site.mainnav %}-->
+            <!--<md-button href="{{ option[1].link }}" name="{{ option[1].name }}" value="{{ option[1].name }}">-->
+            <!--{{ option[1].name }}-->
+            <!--</md-button>-->
+            <!--{% endfor %}-->
+            <!--</md-content>-->
 
-    </md-sidenav>
+        </md-sidenav>
+    </div>
 </div>

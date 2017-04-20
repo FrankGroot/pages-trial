@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<div class="banner">
-    <div class="container">
-        <h1>{{ page.title }}</h1>
-    </div>
-</div>
 <div class="container">
-    <div layout="row">
+    <div>
+        <div class="introduction">
+            <h1>{{ page.title }}</h1>
+            <div class="two-column">
+                {{ page.introduction }}
+            </div>
+        </div>
 
         <article flex="100">
             <div class="customer-case">

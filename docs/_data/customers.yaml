@@ -1,24 +1,18 @@
 - anwb:
   url: http://www.anwb.nl
   img: img/customers/anwb.png
-- huawei:
-  url:
-  img: img/customers/huawei.png
 - gerimedica:
   url: customers/gerimedica
   img: img/customers/gerimedica.png
 - casumo:
-  url: http://www.casumo.com
+  url: customers/casumo
   img: img/customers/casumo.png
 - anwb:
   url: http://www.anwb.nl
   img: img/customers/anwb.png
-- huawei:
-  url:
-  img: img/customers/huawei.png
 - gerimedica:
-  url: http://www.gerimedica.nl
+  url: customers/gerimedica
   img: img/customers/gerimedica.png
 - casumo:
-  url: http://www.casumo.com
+  url: customers/casumo
   img: img/customers/casumo.png

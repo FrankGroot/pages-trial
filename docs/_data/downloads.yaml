@@ -1,11 +1,11 @@
 framework:
   latest:
-    version: 3.0.3
+    version: 3.0.4
     url: http://trifork.com/download-axonframework/
-    desc: Download 3.0.3 Full package
+    desc: Download 3.0.4 Full package
     sources:
-      zip: https://github.com/AxonFramework/AxonFramework/zipball/axon-3.0.3
-      tar: https://github.com/AxonFramework/AxonFramework/tarball/axon-3.0.3
+      zip: https://github.com/AxonFramework/AxonFramework/zipball/axon-3.0.4
+      tar: https://github.com/AxonFramework/AxonFramework/tarball/axon-3.0.4
     docs:
         title: Reference Guide
         html: http://docs.axonframework.org/v/3.0/
