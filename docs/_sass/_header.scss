@@ -34,6 +34,7 @@ md-nav-bar {
 }
 
 .sidenav {
+
   .md-nav-bar {
     border: none;
   }
@@ -85,5 +86,9 @@ md-menu-content{
 
   .container {
     padding-bottom: 0px;
+  }
+
+  md-sidenav {
+    position: fixed;
   }
 }
