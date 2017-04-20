@@ -94,3 +94,21 @@
     width:100%;
   }
 }
+
+.form-banner {
+  background-color: lightgrey;
+  color: black;
+  padding: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  button {
+    width:100%;
+  }
+}
