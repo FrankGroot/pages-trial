@@ -132,7 +132,7 @@ article {
 }
 
 
-.container.layout-column {
+.container.layout-column, .main-content {
   // iPhone fix?
   @media screen and (max-width: 599px) {
     flex: 1 0 auto !important;
