@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5 {
   @media screen and (max-width: 959px) {
     padding-top: 42px;
   }
+
+  // iPhone fix?
+  @media screen and (max-width: 599px) {
+    flex: 1 0 auto !important;
+  }
 }
 
 .md-button {
