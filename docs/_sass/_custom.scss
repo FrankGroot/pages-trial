@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5 {
 
 .main-content {
   padding-top: 70px;
+
+  @media screen and (max-width: 959px) {
+    padding-top: 42px;
+  }
 }
 
 .md-button {
@@ -24,7 +28,7 @@ h1, h2, h3, h4, h5 {
   padding-top: 10px;
   padding-bottom: 20px;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 959px) {
     padding: 0px 10px;
   }
 }

@@ -11,6 +11,10 @@
   height: 100px;
   color: grey;
   text-align: center;
+  //iPhone fix
+  @media (max-width: 599px) {
+    flex: 1 0 auto !important;
+  }
 
   &:before {
     content: '';
